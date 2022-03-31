@@ -17,7 +17,7 @@ class Book(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('book_detail', kwarks={'pk':str(self.pk)})
+        return reverse('book_detail', kwargs={'pk':str(self.pk)})
 
 
 class Review(models.Model):
